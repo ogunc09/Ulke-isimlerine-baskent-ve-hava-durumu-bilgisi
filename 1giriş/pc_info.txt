@@ -1,0 +1,1 @@
+toplam ram: 15.86 kullanılan ram: 7.049999999999999 free ram: 8.81 cpu sayısı 12 

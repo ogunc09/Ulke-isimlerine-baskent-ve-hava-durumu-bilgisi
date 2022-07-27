@@ -1,0 +1,47 @@
+ <!--HTML'de bir adrese bağlantı verirken <a> etiketi kullanılır-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+    body{background: skyblue; font-family: verdana; color: white; padding: 30px; }
+    h1{font-size: 48px; text-transform: uppercase; letter-spacing: 2px; text-align: center;}
+    p{font-size: 16px; text-align: center;}
+   </style>
+
+
+</head>
+<body>
+    <h1>Country Name </h1>   
+    <input type="text" id="https://restcountries.com/v3.1/name/"+Country value="Country...">
+    
+    <button button onclick="myFunction()"> button </button>
+    <p id = "demo"></p>
+    <br>
+<!--Bağlantının hedefi href ile belirtilir. -->
+  <body>
+    <button type="button"
+    onclick="document.getElementById('demo').innerHTML = Date()">Click me to display Date and Time.</button>
+    <p id="demo"></p>
+  </body>  
+  
+    <script  type="text/javascript" src="./capital.weather.js">
+    
+    //module.exports = {start, findCapitalWeather }
+    //module.import = findCapitalWeather();
+    //module.import = start();       
+    //import findCapitalWeather  from './captail.weather.js';
+        function myFunction() { 
+        
+            var x = document.getElementById("https://restcountries.com/v3.1/name/").value;
+            findCapitalWeather(x).then((res) => {
+              document.getElementById("demo").innerHTML = res.responseWeather;
+            })
+            
+        }; 
+
+   </script>
+
+ 
+
+</body>
+</html>
